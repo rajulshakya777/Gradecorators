@@ -12,7 +12,7 @@ pageEncoding="UTF-8"%>
 <h1>Hello Dear</h1>
 
 <%
-out.println(HibernateFatory.getSessionFactory());
+out.println(HibernateFatory.getSessionFactory());//
 %>
 </body>
 </html>

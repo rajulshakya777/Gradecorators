@@ -31,7 +31,6 @@ INDEX VERSION 1.134+/Users/rajulshakywar/Desktop/Intro_to_SE/Project/Gradecorato
 1311179183.index
 962387591.index
 3110038401.index
-767201149.index
 3307487586.index
 3977777628.index
 588870270.index
