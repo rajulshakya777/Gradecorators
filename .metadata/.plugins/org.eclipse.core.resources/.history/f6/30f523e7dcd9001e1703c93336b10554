@@ -1,0 +1,23 @@
+package utility;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class HibernateFatory {
+	
+	private static SessionFactory sessionFactory;
+	
+	public static SessionFactory getSessionFactory() {
+		System.out.println("Working Directory = " + System.getProperty("user.dir"));
+		try {
+			if(sessionFactory==null) {
+				sessionFactory = new Configuration().configure("../resources/hibernate.cfg.xml").buildSessionFactory();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+		return sessionFactory;
+	}
+
+}

@@ -1,0 +1,33 @@
+package utility;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+public class HibernateFatory {
+
+	private static SessionFactory sessionFactory = null;
+
+	public static SessionFactory getSessionFactory() throws IOException {
+		if (sessionFactory != null) {
+			return sessionFactory;
+		}
+		InputStream inputStream = HibernateFatory.class.getClassLoader().getResourceAsStream("hibernate.cfg.xml");
+		
+		Properties properties = new Properties();
+        properties.load(inputStream);
+        
+//		Configuration configuration = new Configuration().configure(inputStream);
+        
+        Configuration configuration = new Configuration().setProperties(properties);
+		StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
+				.applySettings(configuration.getProperties());
+		sessionFactory = configuration.buildSessionFactory(builder.build());
+		return sessionFactory;
+	}
+
+}
