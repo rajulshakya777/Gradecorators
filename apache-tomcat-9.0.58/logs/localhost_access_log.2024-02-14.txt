@@ -1,0 +1,4 @@
+127.0.0.1 - - [14/Feb/2024:21:00:50 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [14/Feb/2024:21:00:51 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 51
+127.0.0.1 - - [14/Feb/2024:21:08:45 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [14/Feb/2024:21:09:02 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 51

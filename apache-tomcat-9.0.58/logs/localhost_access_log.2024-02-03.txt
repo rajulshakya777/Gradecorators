@@ -1,0 +1,14 @@
+127.0.0.1 - - [03/Feb/2024:11:40:33 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:11:40:33 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 -
+127.0.0.1 - - [03/Feb/2024:11:50:42 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:11:50:42 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:20:19:13 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 47
+127.0.0.1 - - [03/Feb/2024:20:20:30 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:20:20:30 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 47
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:20:22:31 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 47
+127.0.0.1 - - [03/Feb/2024:20:23:13 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:20:23:13 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 51
+127.0.0.1 - - [03/Feb/2024:20:25:57 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:20:25:58 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 46
+127.0.0.1 - - [03/Feb/2024:20:27:54 -0600] "GET / HTTP/1.1" 200 11354
+0:0:0:0:0:0:0:1 - - [03/Feb/2024:20:27:54 -0600] "GET /webproject-ex-0201-Lovett/MyServletSmith HTTP/1.1" 200 51

@@ -1,3 +1,5 @@
 INDEX VERSION 1.134
 /Users/rajulshakywar/Desktop/Intro_to_SE/Project/Gradecorator_JSP/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1288100296.index
 /gradecorators-webapp/src/main/resources
+/Users/alexanderlovett/SoftwareEng/Group project/Gradecorators/Gradecorators/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1288100296.index
+/gradecorators-webapp/src/main/java
