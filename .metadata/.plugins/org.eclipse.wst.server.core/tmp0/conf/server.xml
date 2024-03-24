@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/rajulshakywar/Desktop/Intro_to_SE/Project/Gradecorator_JSP/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/rajulshakywar/Desktop/Intro_to_SE/Project/Gradecorator_JSP/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/gradecorators-webapp" path="/gradecorators-webapp" reloadable="true" source="org.eclipse.jst.j2ee.server:gradecorators-webapp"/></Host>
+      <Context docBase="/Users/alexanderlovett/SoftwareEng/Group project/Gradecorators/Gradecorators/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/alexanderlovett/SoftwareEng/Group project/Gradecorators/Gradecorators/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/gradecorators-webapp" path="/gradecorators-webapp" reloadable="true" source="org.eclipse.jst.j2ee.server:gradecorators-webapp"/></Host>
     </Engine>
   </Service>
 </Server>
