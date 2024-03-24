@@ -9,7 +9,7 @@ import org.hibernate.cfg.Configuration;
 public class HibernateFatory {
 
 	private static SessionFactory sessionFactory = null;
-	
+	//
 	public static SessionFactory getSessionFactory() throws IOException {
 		if (sessionFactory != null) {
 			return sessionFactory;
