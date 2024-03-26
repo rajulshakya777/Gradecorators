@@ -1,0 +1,102 @@
+package entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+
+@Entity
+public class Product {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ProductId",length = 255)
+	private int id;
+	
+	@Column(name="OriginalPrice")
+	private String originalPrice;
+	
+	@Column(name="FinalPrice")
+	private String finalPrice;
+	
+	@Column(name="DiscountId")
+	private String discountId;
+	
+	@ManyToOne
+	private Category category;
+	
+	@OneToOne
+	private Metadata metaData;
+
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Product(String originalPrice, String finalPrice, String discountId, Category category, Metadata metaData) {
+		super();
+		this.originalPrice = originalPrice;
+		this.finalPrice = finalPrice;
+		this.discountId = discountId;
+		this.category = category;
+		this.metaData = metaData;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getOriginalPrice() {
+		return originalPrice;
+	}
+
+	public void setOriginalPrice(String originalPrice) {
+		this.originalPrice = originalPrice;
+	}
+
+	public String getFinalPrice() {
+		return finalPrice;
+	}
+
+	public void setFinalPrice(String finalPrice) {
+		this.finalPrice = finalPrice;
+	}
+
+	public String getDiscountId() {
+		return discountId;
+	}
+
+	public void setDiscountId(String discountId) {
+		this.discountId = discountId;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public Metadata getMetaData() {
+		return metaData;
+	}
+
+	public void setMetaData(Metadata metaData) {
+		this.metaData = metaData;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", originalPrice=" + originalPrice + ", finalPrice=" + finalPrice + ", discountId="
+				+ discountId + ", category=" + category + ", metaData=" + metaData + "]";
+	}
+	
+}

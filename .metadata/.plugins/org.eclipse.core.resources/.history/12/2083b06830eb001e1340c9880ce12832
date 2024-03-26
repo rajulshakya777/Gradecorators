@@ -1,0 +1,69 @@
+package entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Category {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="CategoryId")
+	private String id;
+	
+	@Column(name = "CategoryName", length = 30, nullable = false)
+	private String categoryName;
+	
+	@Column(name = "MetaDataId" ,length = 30, nullable = false)
+	private String metaDataId;
+	
+	@OneToMany(mappedBy = "category")
+	private List<Product> productList = new ArrayList<Product>();
+	
+
+	public Category() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Category(String categoryName, String metaDataId) {
+		super();
+		this.categoryName = categoryName;
+		this.metaDataId = metaDataId;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
+	public String getMetaDataId() {
+		return metaDataId;
+	}
+
+	public void setMetaDataId(String metaDataId) {
+		this.metaDataId = metaDataId;
+	}
+	
+	
+	
+	
+}

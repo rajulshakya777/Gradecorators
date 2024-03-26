@@ -11,14 +11,12 @@ public class HibernateFatory {
 	private static SessionFactory sessionFactory = null;
 	//
 	public static SessionFactory getSessionFactory() throws IOException {
-		if (sessionFactory != null) {
-			return sessionFactory;
-		}
-		Configuration configuration = new Configuration().configure();        
-		StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder()
-				.applySettings(configuration.getProperties());
-		sessionFactory = configuration.buildSessionFactory(builder.build());
-		return sessionFactory;
+       if (sessionFactory != null) {
+           return sessionFactory;
+         }
+         Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
+         sessionFactory = configuration.buildSessionFactory();
+         return sessionFactory;
 	}
 
 }
